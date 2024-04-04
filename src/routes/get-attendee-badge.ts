@@ -48,7 +48,7 @@ export async function getAttendeeBadge (app: FastifyInstance) {
 
             const baseURL = `${request.protocol}://${request.hostname}`
 
-            const checkInURL = new URL(`/attendees/${attendeeId}/checkin`, baseURL)
+            const checkInURL = new URL(`/attendees/${attendeeId}/check-in`, baseURL)
 
             return reply.send({
                 badge: {
