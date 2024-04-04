@@ -6,3 +6,13 @@ Content-Type: application/json
     "details": "Um evento para quem é apaixonado por programação!",
     "maximumAttendees": 100
 }
+
+###
+
+POST http://localhost:3333/events/d409b408-2108-41d7-9bb7-1d22d9aed0fc/attendees
+Content-Type: application/json
+
+{
+    "name": "Patrick Cuppi",
+    "email": "example@email.com.br"
+}
